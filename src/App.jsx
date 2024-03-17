@@ -14,27 +14,31 @@ function App() {
   return (
     <>
       <header className="header">
-        <nav className="nav">
-          <img className="nav__logo" src={Logo} alt="nav logo"></img>
-          <button className="button--light text--bold">Try it Free</button>
-        </nav>
+        <div className="header__wrapper">
+          <nav className="nav">
+            <img className="nav__logo" src={Logo} alt="nav logo"></img>
+            <button className="button--light text--bold">Try it Free</button>
+          </nav>
 
-        <article className="hero">
-          <div className="hero__text-container">
-            <h1 className="text--headings">
-              Build The Community Your Fans Will Love
-            </h1>
-            <p className="hero__description text--body">
-              Huddle re-imagines the way we build communities. You have a voice,
-              but so does your audience. Create connections with your users as
-              you engage in genuine discussion.
-            </p>
-            <button className="button--dark text--bold">
-              Get Started For Free
-            </button>
-          </div>
-          <img className="hero__img" src={ImgHero} alt="hero img"></img>
-        </article>
+          <article className="hero">
+            <div className="hero__text-container">
+              <h1 className="text--headings">
+                Build The Community Your Fans Will Love
+              </h1>
+              <p className="hero__description text--body">
+                Huddle re-imagines the way we build communities. You have a
+                voice, but so does your audience. Create connections with your
+                users as you engage in genuine discussion.
+              </p>
+              <button className="button--dark text--bold">
+                Get Started For Free
+              </button>
+            </div>
+            <div className="hero__wrapper">
+              <img className="hero__img" src={ImgHero} alt="hero img"></img>
+            </div>
+          </article>
+        </div>
       </header>
 
       <main className="main">
